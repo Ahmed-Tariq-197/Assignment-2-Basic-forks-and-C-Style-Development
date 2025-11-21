@@ -1,7 +1,6 @@
 \
-        # Lab 5 — Process Management (CSE233)
-
-        **Short description**: This project contains the code examples from Lab-5 (Process Management) demonstrating `fork()` (process creation), linker behavior across multiple translation units, and inspecting dynamic libraries (loader). The original lab PDF is included with the submission. fileciteturn0file0
+        # Lab 5 — Process Management (CSE233):
+        This project contains the code examples from Lab-5 (Process Management) demonstrating `fork()` (process creation), linker behavior across multiple                 translation units, and inspecting dynamic libraries (loader). The original lab PDF is included with the submission. fileciteturn0file0
 
         ## Contents
         - `process_creation.c` — fork() example (parent & child, with `wait()`)
@@ -36,18 +35,15 @@
         ./simple_program
         ```
 
-        ## What each example does (short)
+        ## What each example does 
         - **process_creation.c**: Creates a child process using `fork()`. Parent waits for child to finish. Demonstrates PID/PPID differences and simple parent-child synchronization.
         - **file1.c / file2.c**: Shows how the linker resolves a symbol (`hello`) defined in one file and used in another.
         - **simple_program.c**: Minimal program used with `ldd` to demonstrate which shared libraries are dynamically loaded at run time.
 
-        ## Linker vs Loader (summary)
+        ## Linker vs Loader 
         - **Linker**: Combines object files and resolves symbol references (e.g., function calls across files) and produces an executable or shared object. It's responsible for symbol resolution and ordering. See `file1.c` + `file2.c` demo.
         - **Loader**: Loads the executable into memory, sets up runtime linkages and maps shared libraries (dynamic linking). Tools like `ldd` show which dynamic libraries are required by an ELF executable.
 
         ## License
         This project is released under the MIT License — see `LICENSE`.
-
-        ## Author
-        Lab materials adapted for submission (CSE233 Lab 5).
 
